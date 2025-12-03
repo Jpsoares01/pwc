@@ -1,0 +1,31 @@
+@use 'colors' as *;
+
+.bar-button{
+    width: 80px;
+    height: 30px;
+    background-color: $background-primary-dark-theme;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: $font-color;
+    outline: none;
+}
+
+.bar-button:hover{
+    background-color: $background-lighter-dark-theme;
+    color: $font-color;
+}
+
+.bar-button:active{
+    background-color: $background-darker-dark-theme;
+    color: $font-color;
+}
+
+.bar-button a {
+    color: $font-color;
+}
+
+.bar-button:focus {
+    outline: none; 
+    color: $font-color;
+}
