@@ -44,7 +44,7 @@ body img {
 
     body p {
         display: flex;
-        width: 50%;
+        width: 40%;
         border: 1px solid black;
         border-radius: 20px;
         padding: 10px 15px;
@@ -52,9 +52,16 @@ body img {
         font-size: 16px;
     }
 
+    .image-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    width: 100%; 
+}
+
     body img {
         display: flex;
-        width: 100%;
+        width: 40%;
         border: 1px solid black;
         border-radius: 20px;
         margin: 20px;
