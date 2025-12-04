@@ -39,14 +39,16 @@
         background: $topbar-primary-dark-theme;
         position: fixed;
         width: 100%;
+        z-index: 1000;
     }
+
     .menu-hamb{
         display: none;
     }
 
     .hamb-links{
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: flex-end;
         padding: 10px;
         gap: 10px;
