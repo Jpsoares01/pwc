@@ -13,7 +13,6 @@ function loadComponent(placeholderId, filePath, callback) {
             if (placeholder) {
                 placeholder.innerHTML = htmlContent;
                 
-                //
                 // Callback to prevent script to run before html insertion
                 if (callback) {
                     callback();
@@ -37,8 +36,9 @@ function initializeTopbarMenu() {
     }
 }
 
-// Load the header and pass the menu logic as a callback
+// Load the components
 loadComponent('header-container', 'includes/topbar.html', initializeTopbarMenu);
+loadComponent('aside-content', 'includes/content.html');
 
 
 // Init Foundation

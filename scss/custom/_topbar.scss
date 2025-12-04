@@ -2,20 +2,28 @@
 @use 'buttons';
 @use 'colors' as *;
 
+.topbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
 
 .menu-hamb {
     background: none;
     border: none;
+    display: flex;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
     display: block;
+    align-self: flex-end;
 }
 
 .hamb-links {
     display: none;
     flex-direction: column; 
-    padding: 1rem 0;
     text-align: center;
 }
 
@@ -26,7 +34,11 @@
 
 @media screen and (min-width:768px){
     .topbar {
+        display: flex;
+        flex-direction: row;
         background: $topbar-primary-dark-theme;
+        position: fixed;
+        width: 100%;
     }
     .menu-hamb{
         display: none;
@@ -39,5 +51,4 @@
         padding: 10px;
         gap: 10px;
     }
-    
 }

@@ -1,0 +1,17 @@
+.content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 70px;
+        width: 250px;
+    }
+
+@media screen and (min-width:768px) { 
+    .content{
+        position: fixed;
+        top: 70px;
+        right: 5px;
+        width: 250px;
+    }
+}
