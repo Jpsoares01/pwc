@@ -5,18 +5,18 @@
         align-items: center;
         flex-direction: column;
         margin: 0 auto;
-        top: 70px;
+
         width: 250px;
         border: 1px solid black;
         border-radius: 20px;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.085);
-        /*background-image: linear-gradient(
+        height: 90%;
+        background-image: linear-gradient(
             to bottom,
-            $background-primary-dark-theme 30%,
-            $background-lighter-dark-theme 70%,
+            $background-primary-dark-theme 0%,
+            $background-lighter-dark-theme 50%,
             transparent 100%
-            );*/
+            );
     }
 
 nav ul {
