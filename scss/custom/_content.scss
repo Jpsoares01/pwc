@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 .content {
         display: flex;
         align-items: center;
@@ -5,6 +7,10 @@
         margin: 0 auto;
         top: 70px;
         width: 250px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: $background-lighter-dark-theme;
     }
 
 nav ul {
@@ -22,7 +28,7 @@ nav li {
     .content{
         position: fixed;
         top: 70px;
-        right: 5px;
+        right: 10px;
         width: 20%;
     }
 
