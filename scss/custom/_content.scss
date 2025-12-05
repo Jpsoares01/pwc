@@ -10,7 +10,12 @@
         border: 1px solid black;
         border-radius: 20px;
         padding: 10px;
-        background-color: $background-lighter-dark-theme;
+        background-image: linear-gradient(
+            to bottom,
+            $background-primary-dark-theme 30%,
+            $background-lighter-dark-theme 70%,
+            transparent 100%
+            );
     }
 
 nav ul {

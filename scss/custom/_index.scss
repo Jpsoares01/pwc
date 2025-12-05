@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 body h1 {
         display: flex;
         justify-content: center;
@@ -91,6 +93,13 @@ body img {
         border-radius: 20px;
         padding: 10px;
         margin: 20px;
+        background-image: linear-gradient(
+            to bottom,
+            $background-darker-dark-theme 0%,
+            $background-primary-dark-theme 30%,
+            $background-lighter-dark-theme 70%,
+            transparent 100%
+            );
     }
 
     .section-container:nth-child(odd) > div:first-child {
