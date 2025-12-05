@@ -6,7 +6,7 @@ function validarEEnviar(event) {
 
     const nome = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("menssage").value.trim();
+    const mensagem = document.getElementById("message").value.trim();
 
     if (!nome || !email || !mensagem) {
         alert("Please fill in all fields.");
