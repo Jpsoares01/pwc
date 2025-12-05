@@ -4,20 +4,20 @@
 function validarEEnviar(event) {
     event.preventDefault(); // impede o envio normal
 
-    const nome = document.getElementById("nome").value.trim();
+    const nome = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("mensagem").value.trim();
+    const mensagem = document.getElementById("menssage").value.trim();
 
     if (!nome || !email || !mensagem) {
-        alert("Por favor, preencha todos os campos.");
+        alert("Please fill in all fields.");
         return;
     }
 
     if (!email.includes("@")) {
-        alert("O email deve conter '@'.");
+        alert("E-mail must contain '@'.");
         return;
     }
 
-    alert("Enviado com sucesso!");
+    alert("Sent successfully!");
 }
 
