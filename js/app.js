@@ -36,6 +36,8 @@ function initializeTopbarMenu() {
     }
 }
 
+
+
 // Load the components
 loadComponent('header-container', 'includes/topbar.html', initializeTopbarMenu);
 loadComponent('aside-content', 'includes/content.html');

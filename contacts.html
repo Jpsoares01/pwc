@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
+    <title>Contacts</title>
     
     <link rel="stylesheet" href="css/app.css">
-    
-    <link rel="stylesheet" href="css/contactos.css">
 </head>
 
 <body class="body-contacts">
@@ -18,33 +16,34 @@
     <div class="contact-wrapper">
 
         <div class="contact-info">
-            <h2>Onde estamos</h2>
-            <p>Tens dúvidas sobre tecnologias assistivas ou queres saber mais sobre o projeto? Envia-nos uma mensagem!</p>
+            <h2>Where we are</h2>
+            <p>Do you have questions about assistive technologies or want to know more about the project? Send us a message!</p>
             
             <hr class="separador">
 
-            <p><strong>📍 Morada:</strong><br>Rua Diogo de Macedo, nº192 4400-107<br> Vila Nova de Gaia, Portugal</p>
+            <p><strong>📍 Adress:</strong><br>Rua Diogo de Macedo, nº192 4400-107<br> Vila Nova de Gaia, Portugal</p>
             <p><strong>📧 Email:</strong><br>info@islagaia.pt</p>
-            <p><strong>📞 Telefone:</strong><br> 22 377 29 80</p>
+            <p><strong>📞 Phone:</strong><br> 22 377 29 80</p>
         </div>
 
         <form class="contact-form" action="#" method="POST">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="O teu nome..." required>
+            <label for="nome">Name</label>
+            <input type="text" id="nome" name="nome" placeholder="Your Name..." required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="O teu email..." required>
+            <input type="email" id="email" name="email" placeholder="Your email..." required>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreve aqui a tua mensagem..." required></textarea>
+            <label for="mensagem">Message</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Write here your message..." required></textarea>
 
-            <button type="submit">Enviar Mensagem</button>
+            <button type="submit" onclick="validarEEnviar(event)">Send</button>
         </form>
 
     </div>
 
     <script src="js/app.js"></script>
     <script src="js/custom/_topbar.js"></script>
+    <script src="js/custom/_popup.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,125 @@
+@use 'colors' as *;
+
+
+.body-about {
+    background: $background-primary-dark-theme; 
+    color: #000000; 
+}
+
+.separador {
+    border-top: 1px solid #333; 
+    opacity: 0.3;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.about-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.about-intro h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.team-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    margin: 0;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.team-card .role {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.team-card .bio {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+}
+
+/*Media Query para Telas Grandes */
+
+@media screen and (min-width: 768px) {
+
+    .about-intro{
+        margin-top: 80px;
+    }
+    
+    .about-wrapper {
+        width: 80%; 
+        margin-top: 0px;
+    }
+
+    .team-container {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .team-card {
+        width: 45%; 
+        padding: 40px; 
+    }
+
+    
+    .team-card:hover {
+        transform: translateY(-5px); 
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
