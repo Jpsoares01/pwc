@@ -6,6 +6,11 @@ body h1 {
         font-size: 32px;
     }
 
+body h4 {
+        display: flex;
+        justify-content: center;
+}
+
 body p {
         display: flex;
         width: 70%;
@@ -25,7 +30,7 @@ body img {
 }
 
 @media (max-width: 768px) {
-    .section-container:nth-child(odd) {
+    .section-container:nth-child(odd) .section-content-container {
         flex-direction: row-reverse;
     }
 }
@@ -48,6 +53,13 @@ body img {
         font-size: 48px
     }
 
+    body h4 {
+        display: flex;
+        padding-top: 10px 15px;
+        margin: 20px;
+        justify-content: flex-start;
+    }
+
     body p {
         display: flex;
         width: 100%;
@@ -57,14 +69,36 @@ body img {
         font-size: 16px;
     }
 
-    .section-container{
+    body img {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 20px;
+        height: auto;
+        align-self: center;
+    }
+
+    .section-content-container{
         display: flex;
         flex-direction: row;
         width: 100%;
+        padding: 10px 10px;
+        margin: 20px auto;
+    }
+
+    .section-container {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
         margin: 20px;
     }
 
-    .section-container:nth-child(odd) {
+    .section-container:nth-child(odd) > div:first-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .section-container:nth-child(odd) .section-content-container {
         flex-direction: row-reverse;
     }
 
@@ -81,15 +115,5 @@ body img {
         justify-content: flex-end;
         width: 50%; 
         margin: 10px;
-        padding: 10px 15px;
-    }
-
-    body img {
-        display: flex;
-        width: 100%;
-        border: 1px solid black;
-        border-radius: 20px;
-        height: auto;
-        align-self: center;
     }
 }
